@@ -1,0 +1,12 @@
+{
+  "name": "todo-listreact",
+  "version": "1.0.0",
+  "description": "Root directory for todo-listreact project",
+  "scripts": {
+    "install": "npm run install --prefix server && npm run install --prefix Todo-list",
+    "build": "npm run build --prefix server && npm run build --prefix Todo-list",
+    "start": "npm run start --prefix server && npm run start --prefix Todo-list"
+  },
+  "author": "",
+  "license": "ISC"
+}
