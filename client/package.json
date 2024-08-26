@@ -1,12 +1,12 @@
 {
-  "name": "todo-list",
-  "private": true,
-  "version": "0.0.0",
-  "type": "module",
+  "name": "todo-list-client",
+  "version": "1.0.0",
+  "description": "React client for the todo list application",
+  "main": "index.js",
   "scripts": {
     "install": "npm install",
-    "dev": "vite",
     "build": "vite build",
+    "dev": "vite",
     "lint": "eslint .",
     "preview": "vite preview"
   },
