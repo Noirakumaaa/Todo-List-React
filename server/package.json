@@ -4,7 +4,8 @@
   "description": "Todo list application",
   "main": "index.js",
   "scripts": {
-    "test": "nodemon index.js"
+    "build": "echo 'Building server...'",
+    "start": "nodemon index.js"
   },
   "repository": {
     "type": "git",
