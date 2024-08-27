@@ -4,7 +4,6 @@
   "description": "React client for the todo list application",
   "main": "index.js",
   "scripts": {
-    "install": "npm install",
     "build": "vite build",
     "dev": "vite",
     "lint": "eslint .",
