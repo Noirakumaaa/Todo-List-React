@@ -7,7 +7,7 @@
     "installboth": "npm install --prefix client && npm install --prefix server",
     "start:client": "npm start --prefix client",
     "start:server": "npm start --prefix server",
-    "start": "concurrently \"npm run dev --prefix client\" \"npm run start --prefix server\""
+    "start": "concurrently \"npm run start --prefix server\" \"npm run dev --prefix client\""
   },
   "author": "",
   "license": "ISC",
