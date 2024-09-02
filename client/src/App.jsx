@@ -16,7 +16,7 @@ function App() {
 
   const ongoingData = async () => {
     const existingID = new Set();
-    const response = await axios.get('http://localhost:3000/api/get/todoItem');
+    const response = await axios.get('http://localhost:3001/api/get/todoItem');
     const items = [];
 
     if (taskList === 'true') {
