@@ -7,7 +7,7 @@ export default defineConfig({
     port: 3000, // Change to your desired port
     proxy: {
       '/api': {
-        target: 'http://localhost:3000', // Your backend server
+        target: 'http://localhost:3001', // Your backend server
         changeOrigin: true,
         rewrite: (path) => path.replace(/^\/api/, ''),
       },
