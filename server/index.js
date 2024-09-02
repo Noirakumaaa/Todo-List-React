@@ -8,7 +8,9 @@ const cors = require('cors');
 const mongo_url = process.env.MongoApiKey;
 
 const app = express();
-app.use(cors());
+app.use(cors({
+    origin: 'https://todo-list-react-epdq.onrender.com/', // Your frontend domain
+  }));
 app.use(bodyParser.json()); // To parse JSON bodies
 const port = 3001;
 
