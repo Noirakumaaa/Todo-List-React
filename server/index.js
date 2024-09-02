@@ -12,14 +12,12 @@ app.use(cors());
 app.use(bodyParser.json()); // To parse JSON bodies
 const port = 3000;
 
-// Serve static files from the 'public' directory
-    app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(path.join(__dirname, '../client')));
 
-
+// Serve index.html for the root route
 app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, 'client', 'index.html'));
+    res.sendFile(path.join(__dirname, '../client', 'index.html'));
 });
-    
 
 app.post('/api/add/todoItem', async (req,res)=>{
     const todo_item = req.body;
