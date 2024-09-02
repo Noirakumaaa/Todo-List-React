@@ -15,7 +15,7 @@
     const handleSubmit = async (event) => {
         event.preventDefault();
         try {
-            const response = await axios.post('http://localhost:3001/api/add/todoItem', { todo_item: inputValue });
+            const response = await axios.post('https://todo-list-react-epdq.onrender.com/api/add/todoItem', { todo_item: inputValue });
             const data = JSON.stringify(response); // Access the .data property of the response
             console.log(data);
     
