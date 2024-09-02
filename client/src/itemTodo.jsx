@@ -30,7 +30,7 @@ function ItemTodo(props) {
                 <h3>{itemDes}</h3>
             </div>
             <div>
-                <button onClick={deleteData} className='btn2'>Button</button>
+                <button onClick={deleteData} className='btn2'>Done</button>
             </div>
         </div>
     );
