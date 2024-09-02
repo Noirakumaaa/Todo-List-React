@@ -1,0 +1,17 @@
+{
+  "name": "todo-listreact",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "installboth": "npm install --prefix client && npm install --prefix server",
+    "start:client": "npm start --prefix client",
+    "start:server": "npm start --prefix server",
+    "start": "concurrently \"npm run start:client\" \"npm run start:server\""
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^8.0.0" 
+  }
+}
