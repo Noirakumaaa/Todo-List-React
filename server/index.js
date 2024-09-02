@@ -10,7 +10,7 @@ const mongo_url = process.env.MongoApiKey;
 const app = express();
 app.use(cors());
 app.use(bodyParser.json()); // To parse JSON bodies
-const port = 3000;
+const port = 3001;
 
 //app.use(express.static(path.join(__dirname, '../client')));
 
@@ -18,6 +18,14 @@ const port = 3000;
 // app.get('/', (req, res) => {
 //     res.sendFile(path.join(__dirname, '../client', 'index.html'));
 //});
+
+// Serve static files from the 'dist' directory (where Vite builds the React app)
+app.use(express.static(path.join(__dirname, '../client/dist')));
+
+// Serve index.html for the root route
+app.get('/', (req, res) => {
+  res.sendFile(path.join(__dirname, '../client/dist', 'index.html'));
+});
 
 app.post('/api/add/todoItem', async (req,res)=>{
     const todo_item = req.body;
