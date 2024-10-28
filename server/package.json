@@ -8,12 +8,21 @@
     "start": "nodemon index.js"
   },
   "dependencies": {
+<<<<<<< HEAD
     "body-parser": "^1.20.2",
     "cors": "^2.8.5",
     "dotenv": "^16.4.5",
     "express": "^4.19.2",
     "mongodb": "^6.8.0",
     "mongoose": "^8.5.2",
+=======
+    "body-parser": "^1.20.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.1",
+    "mongodb": "^6.8.0",
+    "mongoose": "^8.7.3",
+>>>>>>> d1ad33d (redo the structure of the program)
     "mongoose-sequence": "^6.0.1",
     "mysql2": "^3.11.0",
     "nodemon": "^3.1.4"

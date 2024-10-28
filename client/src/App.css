@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #root {
   max-width: 1280px;
   margin: 0 auto;
@@ -39,4 +40,183 @@
 
 .read-the-docs {
   color: #888;
+=======
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: solid;
+  height: 100vh;
+  background-image: linear-gradient(
+    65deg,
+    hsl(0deg 0% 100%) 0%,
+    hsl(344deg 0% 94%) 7%,
+    hsl(344deg 0% 88%) 17%,
+    hsl(0deg 0% 82%) 31%,
+    hsl(344deg 0% 79%) 49%,
+    hsl(344deg 0% 76%) 67%,
+    hsl(0deg 0% 73%) 79%,
+    hsl(344deg 0% 69%) 87%,
+    hsl(344deg 0% 64%) 92%,
+    hsl(0deg 0% 60%) 95%,
+    hsl(0deg 0% 56%) 97%,
+    hsl(0deg 0% 51%) 99%,
+    hsl(0deg 0% 46%) 100%
+  );
+}
+
+.todolist-wrapper {
+  border: solid;
+  width: 90%;
+  height: 90%;
+  display: grid;
+  grid-template-columns: 30% 70%;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.todolist-container {
+  border: solid;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); 
+  overflow-y: auto; 
+  overflow-x: hidden; 
+  gap: 2rem; 
+  padding: 2rem;
+  box-sizing: border-box; 
+  height: 100%;
+  background-color: #fff;
+}
+
+.todolist-item {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr 25%; 
+  text-align: center;
+  border: solid 1px #ddd;
+  height: 200px;
+  box-sizing: border-box; 
+  padding: 1rem;
+  border-radius: 6px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.2s;
+}
+
+.todolist-item:hover {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.todolist-item div {
+  height: auto;
+}
+
+.todolist-item div button {
+  height: 100%;
+  width: 50%; 
+  border: none;
+  border-radius: 4px;
+  color: white;
+  cursor: pointer;
+}
+
+.todolist-item div button:first-of-type {
+  background-color: #4CAF50;
+}
+
+.todolist-item div button:last-of-type {
+  background-color: #FF5733; /* Adjust this color for the delete button */
+}
+
+.todolist-item div button:hover:first-of-type {
+  background-color: #45a049;
+}
+
+.todolist-item div button:hover:last-of-type {
+  background-color: #c0392b; /* Darker shade for delete button on hover */
+}
+
+.todolist-addsection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.todolist-addsection input {
+  margin-bottom: 0.5rem;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  width: 80%; /* Adjust width if necessary */
+}
+
+.todolist-addsection button {
+  margin-top: 0.5rem;
+  padding: 0.5rem;
+  border: none;
+  border-radius: 4px;
+  background-color: #4CAF50;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.todolist-addsection button:hover {
+  background-color: #45a049;
+}
+
+.todolist-addsection div {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.todolist-addsection div button {
+  flex: 1; 
+  background-color: #007BFF;
+}
+
+.todolist-addsection div button:hover {
+  background-color: #0056b3;
+}
+
+.todolist-title {
+  font-size: 24px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.todolist-indicator {
+  text-align: center;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.indicator {
+  padding: 0.5rem;
+  border-radius: 4px;
+  background-color: #e0f7fa;
+}
+
+.ongoing {
+  color: #007BFF;
+}
+
+.finished {
+  color: #FF5733;
+}
+
+.button-group {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 10px;
+}
+
+.button-group button.active {
+  background-color: #4CAF50;
+  color: white;
+>>>>>>> d1ad33d (redo the structure of the program)
 }
